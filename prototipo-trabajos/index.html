@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chambitas MX 💼</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Chambitas MX 💼</h1>
+    <p>Ofrece o acepta trabajos rápidos cerca de ti</p>
+  </header>
+
+  <main>
+    <section id="add-job">
+      <h2>Agregar nueva chamba</h2>
+      <form id="job-form">
+        <input type="text" id="nombre" placeholder="Tu nombre" required />
+        <input type="text" id="descripcion" placeholder="Qué trabajo ofreces" required />
+        <input type="number" id="pago" placeholder="Pago (USD)" required min="1" />
+        <button type="submit">Agregar</button>
+      </form>
+    </section>
+
+    <section id="job-list-section">
+      <h2>Trabajos disponibles</h2>
+      <div id="job-list"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>2025 Chambitas MX</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
